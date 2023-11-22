@@ -1,0 +1,3 @@
+server:
+    work_path: /apps/work/chatroom
+    pid_file: chatroom.pid
