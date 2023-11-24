@@ -1,0 +1,27 @@
+#ifndef __PROTOCOL_H__
+#define __PROTOCOL_H__
+
+#include <string>
+#include <map>
+#include <memory>
+
+namespace chat {
+namespace http {
+
+class ChatMessage {
+public:
+    typedef std::shared_ptr<ChatMessage> ptr;
+
+    static ChatMessage::ptr Create(const std::string& v);
+    ChatMessage();
+    std::string get(const std::string& name);
+    void set(const std::string& name, const std::string& val);
+    std::string toString() const;
+private:
+    std::map<std::string, std::string> m_datas;
+};
+
+}
+}
+
+#endif

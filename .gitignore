@@ -1,1 +1,2 @@
 build/*
+bin/web/node_modules/*

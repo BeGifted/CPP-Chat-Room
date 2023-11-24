@@ -1,13 +1,13 @@
 servers:
-    - address: ["0.0.0.0:8020", "172.29.181.211:8020", "/tmp/test.sock"]
-      keepalive: 1
-      timeout: 1000
-      name: chat/1.0
-      accept_worker: accept
-      io_worker: io
-      process_worker: io
-      type: http
-    - address: ["0.0.0.0:8072", "localhost:8071"]
+    # - address: ["0.0.0.0:8020"]
+    #   keepalive: 1
+    #   timeout: 1000
+    #   name: chat/1.0
+    #   accept_worker: accept
+    #   io_worker: io
+    #   process_worker: io
+    #   type: http
+    - address: ["0.0.0.0:8030"]
       keepalive: 1
       timeout: 1000
       name: chat/2.0
